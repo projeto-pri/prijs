@@ -2,33 +2,65 @@
 <html>
 
 <head>
-	<title>Projeto PRI</title>
-</head>
 
-<link rel="stylesheet" type="text/css" href="css/index.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	<title>Projeto PRI</title>
+
+</head>
 
 <body>
 
+<!-- Header -->
+<div class="jumbotron">
+	<p class="header">Header</p>
+</div>
+
 <!-- Phrase list -->
-<ul id="phraseList">
-	<li>Estou com fome</li>
-	<!-- Me de um abraço -->
-	<li>Me d&ecirc; um abra&ccedil;o</li>
-	<li>Estou com dor</li>
-	<li>Estou com Frio</li>
-	<!-- Você pode me dar um remédio? -->
-	<li>Voc&ecirc; pode me dar um rem&eacute;dio?</li>
-	<!-- Preciso de uma abraço -->
-	<li>Preciso de um abra&ccedil;o</li>
-</ul>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">	
+
+				<ul id="phraseList" class="list-group">
+					<li class="list-group-item">Estou com fome</li>
+					<!-- Me de um abraço -->
+					<li class="list-group-item">Me d&ecirc; um abra&ccedil;o</li>
+					<li class="list-group-item">Estou com dor</li>
+					<li class="list-group-item">Estou com Frio</li>
+					<!-- Você pode me dar um remédio? -->
+					<li class="list-group-item">Voc&ecirc; pode me dar um rem&eacute;dio?</li>
+					<!-- Preciso de uma abraço -->
+					<li class="list-group-item">Preciso de um abra&ccedil;o</li>
+				</ul>
+
+		</div> <!-- end .col-md-10 -->	
+	</div> <!-- end .row -->
+</div> <!-- end .container -->
 
 <!-- Control Buttons -->
-<button onclick="Browse(-1);">Sobe</button>
-<button onclick="Browse(1);">Desce</button>
-<button onclick="PlayPhraseAudio();">Clica</button>
+<div class="container">
+	<div class="controlButtons">
+
+		<center>
+			<button onclick="Browse(-1);" type="button" class="btn btn-primary btn-lg"><i class="up"></i></button>
+
+			<button onclick="PlayPhraseAudio();" type="button" class="btn btn-primary btn-lg">Clica</button>
+
+			<button onclick="Browse(1);" type="button" class="btn btn-primary btn-lg"><i class="down"></i></button>
+		</center>
+
+	</div> <!-- end .controlButtons -->
+</div> <!-- end .container -->
 
 </body>
 
-<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/inputmask-plugin"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 
 </html>

@@ -7,7 +7,7 @@ var phraseList = document.getElementById("phraseList").getElementsByTagName("LI"
 sounds = ['estou_com_fome.mp3', 'me_de_um_abraco.mp3', 'estou_com_dor.mp3', 'estou_com_frio.mp3', 'voce_pode_me_dar_remedio.mp3', 'preciso_de_um_abraco.mp3'];
 
 // Highlighting the first phrase of the list
-phraseList[currentPhrase].className = "highlighted";
+phraseList[currentPhrase].classList.add("active");
 
 // Browse the list of phrases and highlight the phrase to be played
 function Browse(number){ // Gets +1 or -1 as parameter, if it is +1 descends in list, if -1 goes up in list
@@ -26,17 +26,17 @@ function Browse(number){ // Gets +1 or -1 as parameter, if it is +1 descends in 
   highlightPhrase();
 }
 
-// Highlighting the current phrase of #888 
+// Highlighting the current phrase
 function highlightPhrase(){
 
   // Clearing the background color of all phrases 
   var i;
   for (i = 0; i < phraseList.length; i++) {
-    phraseList[i].className = "";
+    phraseList[i].classList.remove("active");
   }
 
   // Leaving only the current phrase highlighted
-  phraseList[currentPhrase].className = "highlighted";
+  phraseList[currentPhrase].classList.add("active");
 }
 
 // Play the audio file for the highlighted phrase

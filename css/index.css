@@ -4,6 +4,7 @@
 
 /* Remove margins and padding from the list */
 ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -12,7 +13,6 @@ ul {
 ul li {
   cursor: pointer;
   position: relative;
-  padding: 12px 8px 12px 40px;
   background: #FFF;
   font-size: 18px;
   transition: 0.2s;
@@ -24,6 +24,27 @@ ul li {
   user-select: none;
 }
 
-ul li.highlighted {
-  background: #0984e3;
+.header {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+/* Style the arrows of control buttons */
+i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
