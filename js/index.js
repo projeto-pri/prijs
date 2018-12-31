@@ -4,7 +4,7 @@ var phraseList = document.getElementById("phraseList").getElementsByTagName("LI"
 
 // Array of filenames of recorded phrases
 // It should be in the same order that the phrases appear in the HTML list
-sounds = ['estou_com_fome.mp3', 'me_de_um_abraco.mp3', 'estou_com_dor.mp3', 'estou_com_frio.mp3', 'voce_pode_me_dar_remedio.mp3', 'preciso_de_um_abraco.mp3'];
+sounds = ['estou_com_fome.mp3', 'me_de_um_abraco.mp3', 'estou_com_dor.mp3', 'estou_com_frio.mp3', 'voce_pode_me_dar_remedio.mp3', 'preciso_de_um_abraco.mp3', 'boa_noite.mp3', 'bom_dia.mp3', 'eu_preciso_dormir.mp3', 'eu_preciso_tomar_banho.mp3', 'eu_preciso_usar_o_banheiro.mp3', 'obrigado.mp3'];
 
 // Highlighting the first phrase of the list
 phraseList[currentPhrase].classList.add("active");
