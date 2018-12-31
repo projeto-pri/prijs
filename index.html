@@ -17,44 +17,45 @@
 
 <!-- Header -->
 <div class="jumbotron">
-	<p class="header">Header</p>
+	<div class="header">
+		<center>
+			<img src="img/pri.jpg" class="img-responsive" alt="Logo do Projeto"></img>
+		</center>
+	</div>
 </div>
 
 <!-- Phrase list -->
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">	
-
-				<ul id="phraseList" class="list-group">
-					<li class="list-group-item">Estou com fome</li>
-					<!-- Me de um abraço -->
-					<li class="list-group-item">Me d&ecirc; um abra&ccedil;o</li>
-					<li class="list-group-item">Estou com dor</li>
-					<li class="list-group-item">Estou com Frio</li>
-					<!-- Você pode me dar um remédio? -->
-					<li class="list-group-item">Voc&ecirc; pode me dar um rem&eacute;dio?</li>
-					<!-- Preciso de uma abraço -->
-					<li class="list-group-item">Preciso de um abra&ccedil;o</li>
-				</ul>
-
-		</div> <!-- end .col-md-10 -->	
+				<div class="card">
+						<ul id="phraseList" class="list-group list-group-flush">
+							<li class="list-group-item">Estou com fome</li>
+							<!-- Me de um abraço -->
+							<li class="list-group-item">Me d&ecirc; um abra&ccedil;o</li>
+							<li class="list-group-item">Estou com dor</li>
+							<li class="list-group-item">Estou com Frio</li>
+							<!-- Você pode me dar um remédio? -->
+							<li class="list-group-item">Voc&ecirc; pode me dar um rem&eacute;dio?</li>
+							<!-- Preciso de uma abraço -->
+							<li class="list-group-item">Preciso de um abra&ccedil;o</li>
+						</ul>
+				</div> <!-- end .card -->
+		</div> <!-- end .col-md-12 -->	
 	</div> <!-- end .row -->
 </div> <!-- end .container -->
 
 <!-- Control Buttons -->
-<div class="container">
-	<div class="controlButtons">
+<div class="controlButtons">
 
-		<center>
-			<button onclick="Browse(-1);" type="button" class="btn btn-primary btn-lg"><i class="up"></i></button>
+	<center>
+		<button onclick="Browse(-1);" type="button" class="btn btn-primary btn-lg"><i class="up"></i></button>
 
-			<button onclick="PlayPhraseAudio();" type="button" class="btn btn-primary btn-lg">Clica</button>
+		<button onclick="PlayPhraseAudio();" type="button" class="btn btn-primary btn-lg">Clica</button>
 
-			<button onclick="Browse(1);" type="button" class="btn btn-primary btn-lg"><i class="down"></i></button>
-		</center>
-
-	</div> <!-- end .controlButtons -->
-</div> <!-- end .container -->
+		<button onclick="Browse(1);" type="button" class="btn btn-primary btn-lg"><i class="down"></i></button>
+	</center>
+</div> <!-- end .controlButtons -->
 
 </body>
 

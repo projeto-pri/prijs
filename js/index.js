@@ -22,16 +22,28 @@ function Browse(number){ // Gets +1 or -1 as parameter, if it is +1 descends in 
   else if (currentPhrase == -1){
     currentPhrase = phraseList.length - 1;
   }
-
   highlightPhrase();
+  AutoScroll();
 }
+
+function AutoScroll(){
+    // Determining the position to scroll
+    // two list items before the highlighted item
+    var position = currentPhrase - 2;
+    if (position < 0) position = 0; // Making sure that it will only scroll from the third item
+
+    var item = phraseList[position];
+    var topPos = item.offsetTop; // Getting the pixel value of his position
+    
+    document.getElementById('phraseList').scrollTop = topPos; 
+}
+
 
 // Highlighting the current phrase
 function highlightPhrase(){
 
   // Clearing the background color of all phrases 
-  var i;
-  for (i = 0; i < phraseList.length; i++) {
+  for (var i = 0; i < phraseList.length; i++) {
     phraseList[i].classList.remove("active");
   }
 
@@ -61,3 +73,5 @@ document.onkeydown = function(event) {
         	break;
     }
 }
+
+

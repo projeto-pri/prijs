@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+/* Remove outline from buttons */
+body:not(.user-is-tabbing) button:focus {
+  outline: none;
+}
+
 /* Remove margins and padding from the list */
 ul {
   list-style-type: none;
@@ -14,22 +19,86 @@ ul li {
   cursor: pointer;
   position: relative;
   background: #FFF;
-  font-size: 18px;
-  transition: 0.2s;
+  font-size: 25px;
 
-  /* make the list items unselectable */
+  /* Make the list items unselectable */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
+/* Style the Header */ 
+.jumbotron {
+  margin-bottom: 3vh;
+  padding: 0px;
+  background-color: #D5D6D8;
+  border-radius: 0;
+}
+
 .header {
+  margin: 0px;
+}
+
+.header img {
+  max-height: 15vh;
+  width: auto;
+  height: auto;
   margin: 0;
-  padding: 0;
+}
+
+.card {
+}
+
+/* Style the Phrase list */
+.list-group {
+  height: auto;
+  max-height: 58vh;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  /* Style the scroll from the list */
+  overflow-y: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.list-group li {
   text-align: center;
 }
 
+/* Style the control buttons */ 
+.controlButtons {
+  position: fixed;
+  margin: 0;
+  width: 100vw;
+  bottom: 3vh;
+}
+
+/* Responsive */
+/* For Desktops and large screens */
+@media (min-height: 580px) {
+  .list-group {
+    max-height: 70vh;
+  }
+  .controlButtons {
+    bottom: 2vh;
+  }
+}
+
+/* For Mobile with landscape orientation */
+@media (max-height: 580px) and (orientation: landscape) {
+  .header {
+    display: none;
+  }
+  .list-group {
+    max-height: 60vh;
+  }
+  .controlButtons {
+    bottom: 2.5vh;
+  }
+}
 
 /* Style the arrows of control buttons */
 i {
