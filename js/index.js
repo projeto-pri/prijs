@@ -38,7 +38,6 @@ function AutoScroll(){
     document.getElementById('phraseList').scrollTop = topPos; 
 }
 
-
 // Highlighting the current phrase
 function highlightPhrase(){
 

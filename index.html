@@ -8,7 +8,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-
+	<link rel="stylesheet" type="text/css" href="css/all.css">
 	<title>Projeto PRI</title>
 
 </head>
@@ -32,13 +32,13 @@
 						<ul id="phraseList" class="list-group list-group-flush">
 							<li class="list-group-item">Estou com fome</li>
 							<!-- Me de um abraço -->
-							<li class="list-group-item">Me d&ecirc; um abra&ccedil;o</li>
-							<li class="list-group-item">Estou com dor</li>
-							<li class="list-group-item">Estou com Frio</li>
+							<li class="list-group-item d-flex justify-content-center align-items-center">Me d&ecirc; um abra&ccedil;o</li>
+							<li class="list-group-item d-flex justify-content-center align-items-center">Estou com dor</li>
+							<li class="list-group-item d-flex justify-content-center align-items-center">Estou com Frio</li>
 							<!-- Você pode me dar um remédio? -->
-							<li class="list-group-item">Voc&ecirc; pode me dar um rem&eacute;dio?</li>
+							<li class="list-group-item d-flex justify-content-center align-items-center">Voc&ecirc; pode me dar um rem&eacute;dio?</li>
 							<!-- Preciso de uma abraço -->
-							<li class="list-group-item">Preciso de um abra&ccedil;o</li>
+							<li class="list-group-item d-flex justify-content-center align-items-center">Preciso de um abra&ccedil;o</li>
 						</ul>
 				</div> <!-- end .card -->
 		</div> <!-- end .col-md-12 -->	
@@ -49,11 +49,11 @@
 <div class="controlButtons">
 
 	<center>
-		<button onclick="Browse(-1);" type="button" class="btn btn-primary btn-lg"><i class="up"></i></button>
+		<button onclick="Browse(-1);" type="button" class="btn btn-primary btn-lg"><i class="fas fa-arrow-up"></i></button>
 
-		<button onclick="PlayPhraseAudio();" type="button" class="btn btn-primary btn-lg">Clica</button>
+		<button onclick="PlayPhraseAudio();" type="button" class="btn btn-primary btn-lg"><i class="fas fa-play"></i></button>
 
-		<button onclick="Browse(1);" type="button" class="btn btn-primary btn-lg"><i class="down"></i></button>
+		<button onclick="Browse(1);" type="button" class="btn btn-primary btn-lg"><i class="fas fa-arrow-down"></i></button>
 	</center>
 </div> <!-- end .controlButtons -->
 
@@ -61,7 +61,6 @@
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<script type="text/javascript" src="js/inputmask-plugin"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 
 </html>
