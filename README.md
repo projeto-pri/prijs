@@ -22,9 +22,9 @@ unzip master.zip
 
 ## Como usar?
 
-Acesse o [site do PRIjs]() por qualquer dispositivo.
+Acesse o [site do PRIjs](https://projeto-pri.github.io/prijs/) por qualquer dispositivo.
 
-https://
+https://projeto-pri.github.io/prijs/
 
 Ou,
 
