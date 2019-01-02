@@ -1,0 +1,52 @@
+{
+    "phrases": [
+        {
+            "content": "Estou com frio",
+            "filename": "sounds/estou_com_frio.mp3"
+        },
+        {
+            "content": "Eu preciso tomar banho",
+            "filename": "sounds/eu_preciso_tomar_banho.mp3"
+        },
+        {
+            "content": "Estou com dor",
+            "filename": "sounds/estou_com_dor.mp3"
+        },
+        {
+            "content": "Me dê um abraço",
+            "filename": "sounds/me_de_um_abraco.mp3"
+        },
+        {
+            "content": "Bom dia",
+            "filename": "sounds/bom_dia.mp3"
+        },
+        {
+            "content": "Estou com fome",
+            "filename": "sounds/estou_com_fome.mp3"
+        },
+        {
+            "content": "Eu preciso dormir",
+            "filename": "sounds/eu_preciso_dormir.mp3"
+        },
+        {
+            "content": "Eu preciso usar o banheiro",
+            "filename": "sounds/eu_preciso_usar_o_banheiro.mp3"
+        },
+        {
+            "content": "Você pode me dar remédio?",
+            "filename": "sounds/voce_pode_me_dar_remedio.mp3"
+        },
+        {
+            "content": "Preciso de um abraço",
+            "filename": "sounds/preciso_de_um_abraco.mp3"
+        },
+        {
+            "content": "Obrigado",
+            "filename": "sounds/obrigado.mp3"
+        },
+        {
+            "content": "Boa Noite",
+            "filename": "sounds/boa_noite.mp3"
+        }
+    ]
+}
