@@ -9,6 +9,10 @@ var phraseList = document.getElementById("phraseList").getElementsByTagName("LI"
 // Highlighting the first phrase of the list
 phraseList[currentPhrase].classList.add("active");
 
+document.getElementById("btnUp").addEventListener("click", function(){ Browse(-1); }); 
+document.getElementById("btnDown").addEventListener("click", function(){ Browse(1); }); 
+document.getElementById("btnPlay").addEventListener("click", function(){ PlayPhraseAudio(); }); 
+
 // Browse the list of phrases and highlight the phrase to be played
 function Browse(number){ // Gets +1 or -1 as parameter, if it is +1 descends in list, if -1 goes up in list
 
