@@ -1,10 +1,10 @@
 var currentPhrase = 0; // Iteration variable
 
-var phraseList = document.getElementById("phraseList").getElementsByTagName("LI");
+var phrasesData = JSON.parse(ReadPhrasesData("../sounds/phrases_data.json"));
 
-// Array of filenames of recorded phrases
-// It should be in the same order that the phrases appear in the HTML list
-sounds = ['estou_com_fome.mp3', 'me_de_um_abraco.mp3', 'estou_com_dor.mp3', 'estou_com_frio.mp3', 'voce_pode_me_dar_remedio.mp3', 'preciso_de_um_abraco.mp3', 'boa_noite.mp3', 'bom_dia.mp3', 'eu_preciso_dormir.mp3', 'eu_preciso_tomar_banho.mp3', 'eu_preciso_usar_o_banheiro.mp3', 'obrigado.mp3'];
+WritePhrasesOnHTML(phrasesData);
+
+var phraseList = document.getElementById("phraseList").getElementsByTagName("LI");
 
 // Highlighting the first phrase of the list
 phraseList[currentPhrase].classList.add("active");
@@ -27,20 +27,19 @@ function Browse(number){ // Gets +1 or -1 as parameter, if it is +1 descends in 
 }
 
 function AutoScroll(){
-    // Determining the position to scroll
-    // two list items before the highlighted item
-    var position = currentPhrase - 2;
-    if (position < 0) position = 0; // Making sure that it will only scroll from the third item
+  // Determining the position to scroll
+  // two list items before the highlighted item
+  var position = currentPhrase - 2;
+  if (position < 0) position = 0; // Making sure that it will only scroll from the third item
 
-    var item = phraseList[position];
-    var topPos = item.offsetTop; // Getting the pixel value of his position
-    
-    document.getElementById('phraseList').scrollTop = topPos; 
+  var item = phraseList[position];
+  var topPos = item.offsetTop; // Getting the pixel value of his position
+  
+  document.getElementById('phraseList').scrollTop = topPos; 
 }
 
 // Highlighting the current phrase
 function highlightPhrase(){
-
   // Clearing the background color of all phrases 
   for (var i = 0; i < phraseList.length; i++) {
     phraseList[i].classList.remove("active");
@@ -52,25 +51,58 @@ function highlightPhrase(){
 
 // Play the audio file for the highlighted phrase
 function PlayPhraseAudio(){
-    var phraseAudio = new Audio();
-    // sounds[currentPhrase] it is the file name corresponding to the current highlighted phrase
-    phraseAudio.src = "sounds/" + sounds[currentPhrase];
-    phraseAudio.play();
+  var phraseAudio = new Audio();
+  // sounds[currentPhrase] it is the file name corresponding to the current highlighted phrase
+  phraseAudio.src = phrasesData["phrases"][currentPhrase].filename;
+  phraseAudio.play();
 }
 
 // Event to browse the list and play phrases using Arrow Keys
-document.onkeydown = function(event) {
-    switch (event.keyCode) {
-       case 38: // arrow key UP
-       		Browse(-1);
-         	break;
-       case 40: // arrow key DOWN
-       		Browse(1);
-        	break;
-       case 39: // arrow key RIGHT
-       		PlayPhraseAudio();
-        	break;
-    }
+document.onkeydown = function(event){
+  switch (event.keyCode) {
+     case 38: // arrow key UP
+     		Browse(-1);
+       	break;
+     case 40: // arrow key DOWN
+     		Browse(1);
+      	break;
+     case 39: // arrow key RIGHT
+     		PlayPhraseAudio();
+      	break;
+  }
 }
 
+function ReadPhrasesData(phrasesFile){
+  var phrasesData;
+
+  var rawPhrases = new XMLHttpRequest();
+  rawPhrases.open("GET", phrasesFile, false);
+
+  rawPhrases.onreadystatechange = function (){
+    if(rawPhrases.readyState === 4){
+      if(rawPhrases.status === 200 || rawPhrases.status == 0){
+        phrasesData = rawPhrases.responseText;
+      }
+    }
+  }
+
+  rawPhrases.send(null);
+
+  return phrasesData;
+}
+
+function WritePhrasesOnHTML(phrasesData){
+
+  var ul_phrases = document.getElementById("phraseList");
+
+  for(var i = 0; i < phrasesData["phrases"].length; i++){
+
+    var li_phrase = document.createElement("LI");
+
+    li_phrase.classList.add("list-group-item");
+    li_phrase.innerHTML = phrasesData["phrases"][i].content;
+
+    ul_phrases.appendChild(li_phrase);
+  }
+}
 
