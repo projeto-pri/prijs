@@ -1,6 +1,6 @@
 var currentPhrase = 0; // Iteration variable
 
-var phrasesData = JSON.parse(ReadPhrasesData("../sounds/phrases_data.json"));
+var phrasesData = JSON.parse(ReadPhrasesData("/sounds/phrases_data.json"));
 
 WritePhrasesOnHTML(phrasesData);
 
