@@ -30,6 +30,18 @@ Ou,
 
 Abra o arquivo "index.html" que está na raiz do projeto, que foi baixado no passo da instalação, com o navegador.
 
+Para usar utilize os botões na tela:
+
+![alt imagem dos botoes](https://projeto-pri.github.io/img/prijs/botoes.png)
+
+O botão da esquerda ![imagem do botao da esquerda)](https://projeto-pri.github.io/img/prijs/botao_esquerda.png) movimenta a lista para cima e o da direita ![imagem do botao da direita](https://projeto-pri.github.io/img/prijs/botao_direita.png) movimenta a lista para baixo.
+Quando a frase que deseja reproduzir estiver destacada aperte o botão do meio ![imagem do botao do meio](https://projeto-pri.github.io/img/prijs/botao_meio.png) e poderá ouvir o áudio da frase pela saída de som do seu dispositivo. Se estiver em computador é possível utilizar as setas do teclado para acionar os botões.
+
+* Seta para cima: Ativa o botão da esquerda.
+* Seta para baixo: Ativa o botão da direita.
+* Seta para direita: Ativa o botão do meio.
+
+
 ## Sobre o código
 
 Feito com JavaScript puro e Bootstrap como framework de CSS com idéia de ser responsivo e com interface amigável. A princípio feito para rodar na WEB em qualquer dispositivo, a fim de não criar barreiras para o usuário final. O próximo passo será os dispotivos mobiles com app feito com o framework Ionic/Cordova.
