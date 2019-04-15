@@ -34,8 +34,12 @@ Para usar utilize os botões na tela:
 
 ![alt imagem dos botoes](https://projeto-pri.github.io/img/prijs/botoes.png)
 
-O botão da **esquerda** ![imagem do botao da esquerda)](https://projeto-pri.github.io/img/prijs/botao_esquerda.png) movimenta a lista para cima e o da **direita** ![imagem do botao da direita](https://projeto-pri.github.io/img/prijs/botao_direita.png) movimenta a lista para baixo.
-Quando a frase que deseja reproduzir estiver destacada aperte o botão do **meio** ![imagem do botao do meio](https://projeto-pri.github.io/img/prijs/botao_meio.png) e poderá ouvir o áudio da frase pela saída de som do seu dispositivo. Se estiver em computador é possível utilizar as setas do teclado para acionar os botões.
+
+
+
+
+O botão da **esquerda** <img style="width: auto; height: 30px;" src="https://projeto-pri.github.io/img/prijs/botao_esquerda.png" alt="imagem do botao da esquerda"> movimenta a lista para cima e o da **direita** <img style="width: auto; height: 30px;" src="https://projeto-pri.github.io/img/prijs/botao_direita.png" alt="imagem do botao da direita"> movimenta a lista para baixo.
+Quando a frase que deseja reproduzir estiver destacada aperte o botão do **meio** <img style="width: auto; height: 30px;" src="https://projeto-pri.github.io/img/prijs/botao_meio.png" alt="imagem do botao do meio"> e poderá ouvir o áudio da frase pela saída de som do seu dispositivo. Se estiver em computador é possível utilizar as setas do teclado para acionar os botões.
 
 * Seta para cima: Ativa o botão da esquerda.
 * Seta para baixo: Ativa o botão da direita.
