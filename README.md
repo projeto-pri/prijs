@@ -1,6 +1,6 @@
 # PRIjs ❤
 
-**PRIjs** é um dos sub projetos que fazem parte do **Projeto PRI**. Mais informações sobre o **Projeto PRI** você encontra [aqui](https://projeto-pri.github.io/). O PRIjs vem como as mesmas idéais dos outros subprojetos, que é Dar voz a quem precisa, mas como formas diferentes de atingir esse objetivo. Escolhemos o caminho das multi-plataformas e das interfaces amigáveis, para facilitar a vida dos beneficiados pelo projeto. 
+**PRIjs** é um dos sub projetos que fazem parte do **Projeto PRI**. Mais informações sobre o **Projeto PRI** você encontra [aqui](https://projeto-pri.github.io/). O PRIjs vem com a mesma idéia do Projeto PRI, que é Dar voz a quem precisa, mas com formas diferentes de atingir esse objetivo. Escolhemos o caminho das multi-plataformas e das interfaces amigáveis, para facilitar a vida dos beneficiados pelo projeto. 
 
 O nosso foco são pessoas que tem limitações na sua comunicação e movimentação. Por isso o PRIjs é desenvolvido para ser simples e utilizar o mínimo de esforço do usuário.
 
